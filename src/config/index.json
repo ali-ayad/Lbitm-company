@@ -9,8 +9,8 @@
       "href": "product"
     },
     {
-      "name": "Features",
-      "href": "features"
+      "name": "Teams",
+      "href": "team"
     },
 
     {
@@ -223,7 +223,7 @@
       }
     ]
   },
-  "about": {
+  "contect": {
     "sections": [
       {
         "name": "Something",
@@ -251,5 +251,45 @@
       "twitter": "https://twitter.com/issaafkattan",
       "linkedin": "https://www.linkedin.com/in/issaaf-kattan/"
     }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Building the Future of Iraq",
+    "description": "Lbitm was established in 1997 in Baghdad under Company Law No. 21 to support Iraq’s urban development. With a capital of 5 billion IQD, the company is classified as First-Class in Construction and Fifth-Class in Electrical Engineering. Over the past 15+ years, we have built a strong reputation for delivering infrastructure and construction projects across Iraq, serving both public and private sectors. Our company brings together technical expertise, financial capability, and engineering excellence, ensuring high-quality execution in roads, infrastructure, and large-scale civil projects.",
+    "img": "/assets/images/about.jpg"
+  },
+  "team": {
+    "title": "Our Team & Resources",
+    "members": [
+      { "role": "Consulting Civil Engineer", "count": 2 },
+      { "role": "Consulting Electrical Engineer", "count": 1 },
+      { "role": "Consulting Mechanical Engineer", "count": 1 },
+      { "role": "Consulting Architect", "count": 1 },
+      { "role": "Chief Civil Engineer", "count": 2 },
+      { "role": "Chief Electrical Engineer", "count": 1 },
+      { "role": "Chief Mechanical Engineer", "count": 1 },
+      { "role": "Chief Architect", "count": 1 },
+      { "role": "Civil Engineer", "count": 4 },
+      { "role": "Electrical Engineer", "count": 1 },
+      { "role": "Mechanical Engineer", "count": 1 },
+      { "role": "Architect", "count": 1 }
+    ],
+    "equipment": [
+      {
+        "name": "Excavator",
+        "description": "Heavy-duty excavator used for site preparation.",
+        "img": "/images/equipment/excavator.jpg"
+      },
+      {
+        "name": "Concrete Mixer",
+        "description": "Essential for construction projects.",
+        "img": "/images/equipment/concrete-mixer.jpg"
+      },
+      {
+        "name": "Bulldozer",
+        "description": "Used for land clearing and leveling.",
+        "img": "/images/equipment/bulldozer.jpg"
+      }
+    ]
   }
 }
