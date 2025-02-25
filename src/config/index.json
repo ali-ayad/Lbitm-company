@@ -32,8 +32,8 @@
     "description": "Lbitm Company was established in Baghdad under Company Law No. 21 of 1997 to support Iraq’s urban development. Combining expertise, financial strength, and technical capabilities, it has become a leading firm in construction, roads, and infrastructure. With a capital of 5 billion Iraqi dinars, it is classified as a first-class construction and fifth-class electrical company. Backed by over 15 years of experience, Lbitm’s team of engineers, technicians, ",
     "img": "/assets/images/sunsetwork.jpg",
     "primaryAction": {
-      "text": "Get started",
-      "href": "#"
+      "text": "Contact US",
+      "href": "#contact"
     },
     "secondaryAction": {
       "text": "Email us",
@@ -224,34 +224,97 @@
     ]
   },
   "contect": {
-    "sections": [
-      {
-        "name": "Something",
-        "href": "#",
-        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
-      },
-      {
-        "name": "Something",
-        "href": "#",
-        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
-      },
-      {
-        "name": "Something",
-        "href": "#",
-        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
-      },
-      {
-        "name": "Something",
-        "href": "#",
-        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
-      }
-    ],
-    "socialMedia": {
-      "github": "https://github.com/issaafalkattan",
-      "twitter": "https://twitter.com/issaafkattan",
-      "linkedin": "https://www.linkedin.com/in/issaaf-kattan/"
+    "name": "Lbitm for General Trading & Contracting",
+    "logo": "/assets/images/Libtim-Logo2.png",
+    "contact": {
+      "address": "Baghdad, Iraq – Al-Jamiaa District, 633-21-6",
+      "email": "info@lbitm.iq",
+      "phone": ["+964 771 778 5588", "+964 781 778 5588"],
+      "sections": [
+        { "name": "Home", "href": "#home" },
+        { "name": "About", "href": "#about" },
+        { "name": "Projects", "href": "#projects" },
+        { "name": "Team", "href": "#team" },
+        { "name": "Contact", "href": "#contact" }
+      ]
     }
   },
+  "gallery": {
+    "title": "Company Documentation",
+    "sections": [
+      {
+        "title": "Company Registration & Identity",
+        "images": [
+          {
+            "src": "/assets/images/product1.jpg",
+            "alt": "Company Registration",
+            "caption": "Company Registration Certificate"
+          },
+          {
+            "src": "/assets/images/product1.jpg",
+            "alt": "Company Registration",
+            "caption": "Company Registration Certificate"
+          },
+          {
+            "src": "/images/docs/company-registration.jpg",
+            "alt": "Company Registration",
+            "caption": "Company Registration Certificate"
+          },
+          {
+            "src": "/images/docs/company-registration.jpg",
+            "alt": "Company Registration",
+            "caption": "Company Registration Certificate"
+          },
+          {
+            "src": "/images/docs/company-registration.jpg",
+            "alt": "Company Registration",
+            "caption": "Company Registration Certificate"
+          },
+          {
+            "src": "/images/docs/company-registration.jpg",
+            "alt": "Company Registration",
+            "caption": "Company Registration Certificate"
+          },
+          {
+            "src": "/images/docs/company-identity.jpg",
+            "alt": "Company Identity",
+            "caption": "Company Identity Documents"
+          }
+        ]
+      },
+      {
+        "title": "Tax & Licenses",
+        "images": [
+          {
+            "src": "/images/docs/tax-id.jpg",
+            "alt": "Tax ID",
+            "caption": "Tax Identification & Approval"
+          },
+          {
+            "src": "/images/docs/licenses.jpg",
+            "alt": "Licenses & Certificates",
+            "caption": "Official Licenses & Certificates"
+          }
+        ]
+      },
+      {
+        "title": "Organizational & Projects",
+        "images": [
+          {
+            "src": "/images/docs/organizational-structure.jpg",
+            "alt": "Organizational Structure",
+            "caption": "Company Organizational Structure"
+          },
+          {
+            "src": "/images/docs/projects.jpg",
+            "alt": "Project Documents",
+            "caption": "Project Documentation & Reports"
+          }
+        ]
+      }
+    ]
+  },
+
   "about": {
     "title": "About Us",
     "subtitle": "Building the Future of Iraq",

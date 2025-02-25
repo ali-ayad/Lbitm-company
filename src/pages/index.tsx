@@ -1,16 +1,15 @@
-import React from 'react';
+import React from "react";
 
-
-import Analytics from '../components/Analytics';
-import Header from '../components/Header';
-import LazyShow from '../components/LazyShow';
-import MainHero from '../components/MainHero';
-import MainHeroImage from '../components/MainHeroImage';
-import Pricing from '../components/Pricing';
-import Product from '../components/Product';
-import Team from '../components/Teams';
-import About from '../components/About';
-import Contect from '../components/Contect';
+import Analytics from "../components/Analytics";
+import Header from "../components/Header";
+import LazyShow from "../components/LazyShow";
+import MainHero from "../components/MainHero";
+import MainHeroImage from "../components/MainHeroImage";
+import Pricing from "../components/Pricing";
+import Product from "../components/Product";
+import Team from "../components/Teams";
+import About from "../components/About";
+import Contect from "../components/Contect";
 
 const App = () => {
   return (
@@ -26,23 +25,20 @@ const App = () => {
         </div>
         <MainHeroImage />
       </div>
-    
+
       <LazyShow>
         <>
           <Product />
-       
         </>
       </LazyShow>
       <LazyShow>
         <>
           <About />
-         
         </>
       </LazyShow>
       <LazyShow>
         <>
           <Team />
-         
         </>
       </LazyShow>
       <LazyShow>
@@ -50,7 +46,6 @@ const App = () => {
       </LazyShow>
       <LazyShow>
         <>
-        
           <Contect />
         </>
       </LazyShow>

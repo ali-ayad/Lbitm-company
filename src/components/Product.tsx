@@ -31,13 +31,22 @@ const Product = () => {
         {items.slice(0, visibleProjects).map((item, index) => (
           <div
             key={item.title}
-            className={`flex flex-wrap items-center ${
-              index % 2 === 0 ? "flex-row" : "flex-row-reverse"
+            className={`flex flex-col md:flex-row items-center ${
+              index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
             } my-12`}
           >
+            {/* Image Section (Placed First on Small Screens) */}
+            <div className="w-full md:w-1/2 p-4">
+              <img
+                className="w-full h-auto rounded-lg shadow-lg object-cover"
+                src={item.img}
+                alt={item.title}
+              />
+            </div>
+
             {/* Text Content */}
-            <div className="w-full md:w-1/2 p-6">
-              <h3 className="text-3xl text-gray-800 font-bold mb-3">
+            <div className="w-full md:w-1/2 p-4">
+              <h3 className="text-2xl md:text-3xl text-gray-800 font-bold mb-3">
                 {item.title}
               </h3>
               <p className="text-gray-600">{item.description}</p>
@@ -47,15 +56,6 @@ const Product = () => {
               <p className="text-lg font-semibold text-gray-700">
                 <span className="text-primary">Budget:</span> {item.budget}
               </p>
-            </div>
-
-            {/* Image Section */}
-            <div className="w-full md:w-1/2 p-6">
-              <img
-                className="w-full h-auto rounded-lg shadow-lg"
-                src={item.img}
-                alt={item.title}
-              />
             </div>
           </div>
         ))}

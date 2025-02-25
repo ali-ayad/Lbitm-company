@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
-import { useRouter } from 'next/router';
-import Script from 'next/script';
+import { useRouter } from "next/router";
+import Script from "next/script";
 
-import { GA_ADS_ID } from '../lib/googleAds';
-import * as gtag from '../lib/gtag';
+import { GA_ADS_ID } from "../lib/googleAds";
+import * as gtag from "../lib/gtag";
 
 const App = () => {
   const router = useRouter();
@@ -12,9 +12,9 @@ const App = () => {
     const handleRouteChange = (url: string) => {
       gtag.pageview(url);
     };
-    router.events.on('routeChangeComplete', handleRouteChange);
+    router.events.on("routeChangeComplete", handleRouteChange);
     return () => {
-      router.events.off('routeChangeComplete', handleRouteChange);
+      router.events.off("routeChangeComplete", handleRouteChange);
     };
   }, [router.events]);
 

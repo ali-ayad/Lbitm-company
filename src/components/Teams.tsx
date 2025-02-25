@@ -20,27 +20,43 @@ const Team = () => {
           <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
             Team Members
           </h2>
-          <table className="w-full border-collapse border border-gray-300 shadow-lg">
-            <thead>
-              <tr className="bg-primary text-white">
-                <th className="p-4 text-left">#</th>
-                <th className="p-4 text-left">Job Title</th>
-                <th className="p-4 text-left">Count</th>
-              </tr>
-            </thead>
-            <tbody>
-              {members.map((member, index) => (
-                <tr
-                  key={index}
-                  className={index % 2 === 0 ? "bg-gray-100" : "bg-gray-200"}
-                >
-                  <td className="p-4 border border-gray-300">{index + 1}</td>
-                  <td className="p-4 border border-gray-300">{member.role}</td>
-                  <td className="p-4 border border-gray-300">{member.count}</td>
+          <div className="w-full overflow-x-auto">
+            <table className="w-full min-w-max border-collapse border border-gray-300 shadow-lg">
+              <thead>
+                <tr className="bg-primary text-white">
+                  <th className="p-2 sm:p-4 text-left text-xs sm:text-sm md:text-base">
+                    #
+                  </th>
+                  <th className="p-2 sm:p-4 text-left text-xs sm:text-sm md:text-base">
+                    Job Title
+                  </th>
+                  <th className="p-2 sm:p-4 text-left text-xs sm:text-sm md:text-base">
+                    Count
+                  </th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {members.map((member, index) => (
+                  <tr
+                    key={index}
+                    className={`${
+                      index % 2 === 0 ? "bg-gray-100" : "bg-gray-200"
+                    }`}
+                  >
+                    <td className="p-2 sm:p-4 border border-gray-300 text-xs sm:text-sm md:text-base">
+                      {index + 1}
+                    </td>
+                    <td className="p-2 sm:p-4 border border-gray-300 text-xs sm:text-sm md:text-base">
+                      {member.role}
+                    </td>
+                    <td className="p-2 sm:p-4 border border-gray-300 text-xs sm:text-sm md:text-base">
+                      {member.count}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* Equipment & Machinery Section */}
@@ -48,11 +64,11 @@ const Team = () => {
           <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
             Equipment & Machinery
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {equipment.map((item) => (
               <div key={item.name} className="text-center">
                 <img
-                  className="w-60 h-40 mx-auto rounded-lg shadow-lg"
+                  className="w-full max-w-xs mx-auto rounded-lg shadow-lg"
                   src={item.img}
                   alt={item.name}
                 />

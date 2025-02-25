@@ -1,4 +1,4 @@
-import { createContext, useContext } from 'react';
+import { createContext, useContext } from "react";
 
 export const CanvasContext = createContext<{
   context: CanvasRenderingContext2D | undefined;

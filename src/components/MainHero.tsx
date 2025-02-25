@@ -24,7 +24,6 @@ const MainHero = () => {
               {mainHero.primaryAction.text}
             </a>
           </div>
-          
         </div>
       </div>
     </main>
