@@ -14,8 +14,8 @@
     },
 
     {
-      "name": "Pricing",
-      "href": "pricing"
+      "name": "gallery",
+      "href": "gallery"
     },
     {
       "name": "About",
@@ -23,8 +23,8 @@
     }
   ],
   "callToAction": {
-    "text": "Get started",
-    "href": "#"
+    "text": "Contact US",
+    "href": "#contact"
   },
   "mainHero": {
     "title": "Your  Vision,   ",

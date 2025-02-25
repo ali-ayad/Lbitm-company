@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import LazyShow from "../components/LazyShow";
 import MainHero from "../components/MainHero";
 import MainHeroImage from "../components/MainHeroImage";
-import Pricing from "../components/Pricing";
+import Pricing from "../components/gallery";
 import Product from "../components/Product";
 import Team from "../components/Teams";
 import About from "../components/About";
