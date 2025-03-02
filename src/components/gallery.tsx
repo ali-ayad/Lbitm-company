@@ -69,7 +69,7 @@ const ImageSlider: React.FC<{ section: SectionProps }> = ({ section }) => {
         {/* Left Button */}
         <button
           onClick={handlePrev}
-          className="absolute left-4 sm:left-12 md:left-20 bg-primary text-white px-4 py-2 rounded-full shadow-md hover:bg-opacity-80 transition duration-300"
+          className="absolute left-4 sm:left-12 md:left-20 bg-primary text-white px-4 py-2 rounded-full shadow-md hover:bg-opacity-80 transition duration-300 z-50"
         >
           ❮
         </button>
@@ -110,7 +110,7 @@ const ImageSlider: React.FC<{ section: SectionProps }> = ({ section }) => {
         {/* Right Button */}
         <button
           onClick={handleNext}
-          className="absolute right-4 sm:right-12 md:right-20 bg-primary text-white px-4 py-2 rounded-full shadow-md hover:bg-opacity-80 transition duration-300"
+          className="absolute right-4 sm:right-12 md:right-20 bg-primary text-white px-4 py-2 rounded-full shadow-md hover:bg-opacity-80 transition duration-300 z-50"
         >
           ❯
         </button>
