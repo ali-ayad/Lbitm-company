@@ -44,11 +44,6 @@
     "title": "Projects",
     "items": [
       {
-        "title": "A plug n play template",
-        "description": "Just edit the config.json file with details about your company and voila your beautiful state of the art landing page is ready to go live! Remember to also update your assets, add any images you want to show to /assets/images and link them in the config.json",
-        "img": "/assets/images/product1.jpg"
-      },
-      {
         "title": "Construction of External Fence and Earthworks at Al-Aziziyah Power Station",
         "description": "Execution of external fencing and earthwork elevation at Al-Aziziyah Power Station. This project was undertaken to enhance infrastructure security and stability, ensuring compliance with industry standards and best practices.",
         "img": "/assets/images/product1.jpg",
@@ -246,37 +241,37 @@
         "title": "Company Registration & Identity",
         "images": [
           {
-            "src": "/assets/images/product1.jpg",
+            "src": "/assets/images/img69.jpg",
             "alt": "Company Registration",
             "caption": "Company Registration Certificate"
           },
           {
-            "src": "/assets/images/product1.jpg",
+            "src": "/assets/images/reqester.jpg",
             "alt": "Company Registration",
             "caption": "Company Registration Certificate"
           },
           {
-            "src": "/images/docs/company-registration.jpg",
+            "src": "/assets/images/img209.jpg",
             "alt": "Company Registration",
             "caption": "Company Registration Certificate"
           },
           {
-            "src": "/images/docs/company-registration.jpg",
+            "src": "/assets/images/img216.jpg",
             "alt": "Company Registration",
             "caption": "Company Registration Certificate"
           },
           {
-            "src": "/images/docs/company-registration.jpg",
+            "src": "/assets/images/img69.jpg",
             "alt": "Company Registration",
             "caption": "Company Registration Certificate"
           },
           {
-            "src": "/images/docs/company-registration.jpg",
+            "src": "/assets/images/img70.jpg",
             "alt": "Company Registration",
             "caption": "Company Registration Certificate"
           },
           {
-            "src": "/images/docs/company-identity.jpg",
+            "src": "/assets/images/img71.jpg",
             "alt": "Company Identity",
             "caption": "Company Identity Documents"
           }
@@ -286,12 +281,48 @@
         "title": "Tax & Licenses",
         "images": [
           {
-            "src": "/images/docs/tax-id.jpg",
+            "src": "/assets/images/img73.jpg",
             "alt": "Tax ID",
             "caption": "Tax Identification & Approval"
           },
           {
-            "src": "/images/docs/licenses.jpg",
+            "src": "/assets/images/img74.jpg",
+            "alt": "Licenses & Certificates",
+            "caption": "Official Licenses & Certificates"
+          },
+          {
+            "src": "/assets/images/img160.jpg",
+            "alt": "Licenses & Certificates",
+            "caption": "Official Licenses & Certificates"
+          },
+          {
+            "src": "/assets/images/img154.jpg",
+            "alt": "Licenses & Certificates",
+            "caption": "Official Licenses & Certificates"
+          },
+          {
+            "src": "/assets/images/img80.jpg",
+            "alt": "Licenses & Certificates",
+            "caption": "Official Licenses & Certificates"
+          },
+
+          {
+            "src": "/assets/images/img81.jpg",
+            "alt": "Licenses & Certificates",
+            "caption": "Official Licenses & Certificates"
+          },
+          {
+            "src": "/assets/images/img82.jpg",
+            "alt": "Licenses & Certificates",
+            "caption": "Official Licenses & Certificates"
+          },
+          {
+            "src": "/assets/images/img190.jpg",
+            "alt": "Licenses & Certificates",
+            "caption": "Official Licenses & Certificates"
+          },
+          {
+            "src": "/assets/images/img83.jpg",
             "alt": "Licenses & Certificates",
             "caption": "Official Licenses & Certificates"
           }
@@ -301,12 +332,32 @@
         "title": "Organizational & Projects",
         "images": [
           {
-            "src": "/images/docs/organizational-structure.jpg",
+            "src": "/assets/images/img95.jpg",
             "alt": "Organizational Structure",
             "caption": "Company Organizational Structure"
           },
           {
-            "src": "/images/docs/projects.jpg",
+            "src": "/assets/images/img124.jpg",
+            "alt": "Organizational Structure",
+            "caption": "Company Organizational Structure"
+          },
+          {
+            "src": "/assets/images/img130.jpg",
+            "alt": "Organizational Structure",
+            "caption": "Company Organizational Structure"
+          },
+          {
+            "src": "/assets/images/img172.jpg",
+            "alt": "Organizational Structure",
+            "caption": "Company Organizational Structure"
+          },
+          {
+            "src": "/assets/images/img178.jpg",
+            "alt": "Organizational Structure",
+            "caption": "Company Organizational Structure"
+          },
+          {
+            "src": "/assets/images/img96.jpg",
             "alt": "Project Documents",
             "caption": "Project Documentation & Reports"
           }
@@ -317,10 +368,20 @@
 
   "about": {
     "title": "About Us",
-    "subtitle": "Building the Future of Iraq",
-    "description": "Lbitm was established in 1997 in Baghdad under Company Law No. 21 to support Iraq’s urban development. With a capital of 5 billion IQD, the company is classified as First-Class in Construction and Fifth-Class in Electrical Engineering. Over the past 15+ years, we have built a strong reputation for delivering infrastructure and construction projects across Iraq, serving both public and private sectors. Our company brings together technical expertise, financial capability, and engineering excellence, ensuring high-quality execution in roads, infrastructure, and large-scale civil projects.",
+    "subtitle": "Who We Are",
     "img": "/assets/images/about.jpg"
   },
+  "ceo": {
+    "name": "Omar Issa Hanfoush Al-Jadhba",
+    "image": "/assets/images/ceo.jpg",
+    "education": "Bachelor's Degree in Civil Engineering",
+    "experience": "Successfully executed multiple large-scale engineering projects.",
+    "memberships": [
+      "Member of the Iraqi Engineers Syndicate",
+      "Member of the Kurdistan Engineers Syndicate"
+    ]
+  },
+
   "team": {
     "title": "Our Team & Resources",
     "members": [
@@ -335,24 +396,25 @@
       { "role": "Civil Engineer", "count": 4 },
       { "role": "Electrical Engineer", "count": 1 },
       { "role": "Mechanical Engineer", "count": 1 },
-      { "role": "Architect", "count": 1 }
+      { "role": "Architect", "count": 1 },
+      { "role": "Lawyer", "count": 2 },
+      { "role": "Accountant", "count": 2 },
+      { "role": "Work Supervisor", "count": 6 },
+      { "role": "Service Worker", "count": 3 },
+      { "role": "Heavy Machinery Driver", "count": 8 },
+      { "role": "Various Size Vehicle Driver", "count": 10 }
     ],
     "equipment": [
-      {
-        "name": "Excavator",
-        "description": "Heavy-duty excavator used for site preparation.",
-        "img": "/images/equipment/excavator.jpg"
-      },
-      {
-        "name": "Concrete Mixer",
-        "description": "Essential for construction projects.",
-        "img": "/images/equipment/concrete-mixer.jpg"
-      },
-      {
-        "name": "Bulldozer",
-        "description": "Used for land clearing and leveling.",
-        "img": "/images/equipment/bulldozer.jpg"
-      }
+      { "name": "Concrete Pump", "count": 2 },
+      { "name": "Water Tanker", "count": 4 },
+      { "name": "Excavator", "count": 6 },
+      { "name": "Wheel Loader", "count": 4 },
+      { "name": "Grader", "count": 2 },
+      { "name": "Bulldozer", "count": 1 },
+      { "name": "Compactor (Various Types)", "count": 8 },
+      { "name": "Dump Truck", "count": 13 },
+      { "name": "Bobcat (Various Attachments)", "count": 3 },
+      { "name": "Various Machinery", "count": 6 }
     ]
   }
 }

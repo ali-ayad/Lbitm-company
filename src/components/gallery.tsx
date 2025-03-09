@@ -32,9 +32,10 @@ const Gallery = () => {
   );
 };
 
-// ✅ Image Slider Component with Type Safety
+// ✅ Image Slider Component with Click-to-Enlarge
 const ImageSlider: React.FC<{ section: SectionProps }> = ({ section }) => {
   const [currentIndex, setCurrentIndex] = useState(1);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // ✅ Check if images exist before rendering
   if (!section.images || section.images.length === 0) {
@@ -53,10 +54,18 @@ const ImageSlider: React.FC<{ section: SectionProps }> = ({ section }) => {
     );
   };
 
-  // ✅ Ensure safe indexing with optional chaining
+  // Open modal to enlarge the image
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  // Close modal
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   const leftIndex =
-    (currentIndex - 1 + (section.images?.length || 1)) %
-    (section.images?.length || 1);
+    (currentIndex - 1 + (section.images?.length || 1)) % (section.images?.length || 1);
   const rightIndex = (currentIndex + 1) % (section.images?.length || 1);
 
   return (
@@ -77,7 +86,7 @@ const ImageSlider: React.FC<{ section: SectionProps }> = ({ section }) => {
         {/* Image Display */}
         <div className="flex items-center justify-center space-x-2 sm:space-x-4">
           {/* Left Image (Smaller & Faded) */}
-          <div className="w-36 sm:w-48 h-28 sm:h-36 opacity-50 transform scale-90 transition-all duration-300">
+          <div className="w-36 sm:w-48 h-48 sm:h-48 opacity-50 transform scale-90 transition-all duration-300">
             <img
               src={section.images[leftIndex]?.src}
               alt={section.images[leftIndex]?.alt || "No image"}
@@ -85,12 +94,15 @@ const ImageSlider: React.FC<{ section: SectionProps }> = ({ section }) => {
             />
           </div>
 
-          {/* Center Image (Big & Clear) */}
-          <div className="w-60 sm:w-80 h-44 sm:h-56 transform scale-105 transition-all duration-300">
+          {/* Center Image (Big & Clickable) */}
+          <div
+            className="w-60 sm:w-80 h-80 sm:h-80 transform scale-105 transition-all duration-300 cursor-pointer"
+            onClick={openModal} // Open modal when clicked
+          >
             <img
               src={section.images[currentIndex]?.src}
               alt={section.images[currentIndex]?.alt || "No image"}
-              className="w-full h-full object-cover rounded-lg shadow-xl"
+              className="w-full h-full object-fill rounded-lg shadow-xl"
             />
             <p className="text-gray-700 mt-2">
               {section.images[currentIndex]?.caption || ""}
@@ -98,7 +110,7 @@ const ImageSlider: React.FC<{ section: SectionProps }> = ({ section }) => {
           </div>
 
           {/* Right Image (Smaller & Faded) */}
-          <div className="w-36 sm:w-48 h-28 sm:h-36 opacity-50 transform scale-90 transition-all duration-300">
+          <div className="w-36 sm:w-48 h-44 sm:h-44 opacity-50 transform scale-90 transition-all duration-300">
             <img
               src={section.images[rightIndex]?.src}
               alt={section.images[rightIndex]?.alt || "No image"}
@@ -115,6 +127,31 @@ const ImageSlider: React.FC<{ section: SectionProps }> = ({ section }) => {
           ❯
         </button>
       </div>
+
+      {/* Modal for Enlarged Image */}
+      {isModalOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
+          onClick={closeModal} // Close when clicking outside
+        >
+          <div className="relative p-4">
+            <button
+              onClick={closeModal}
+              className="absolute top-2 right-2 bg-white text-black rounded-full px-3 py-1 text-xl shadow-lg hover:bg-gray-200 transition"
+            >
+              ✖
+            </button>
+            <img
+              src={section.images[currentIndex]?.src}
+              alt={section.images[currentIndex]?.alt || "No image"}
+              className="max-w-full max-h-screen rounded-lg shadow-2xl"
+            />
+            <p className="text-white text-lg text-center mt-4">
+              {section.images[currentIndex]?.caption || ""}
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

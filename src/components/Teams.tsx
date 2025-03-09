@@ -16,66 +16,48 @@ const Team = () => {
         <Divider />
 
         {/* Team Members Table */}
-        <div className="overflow-x-auto mt-10">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
+        <div className="mt-10 text-center">
+          <h2 className="text-3xl font-bold text-gray-800 mb-6">
             Team Members
           </h2>
-          <div className="w-full overflow-x-auto">
-            <table className="w-full min-w-max border-collapse border border-gray-300 shadow-lg">
-              <thead>
-                <tr className="bg-primary text-white">
-                  <th className="p-2 sm:p-4 text-left text-xs sm:text-sm md:text-base">
-                    #
-                  </th>
-                  <th className="p-2 sm:p-4 text-left text-xs sm:text-sm md:text-base">
-                    Job Title
-                  </th>
-                  <th className="p-2 sm:p-4 text-left text-xs sm:text-sm md:text-base">
-                    Count
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {members.map((member, index) => (
-                  <tr
-                    key={index}
-                    className={`${
-                      index % 2 === 0 ? "bg-gray-100" : "bg-gray-200"
-                    }`}
-                  >
-                    <td className="p-2 sm:p-4 border border-gray-300 text-xs sm:text-sm md:text-base">
-                      {index + 1}
-                    </td>
-                    <td className="p-2 sm:p-4 border border-gray-300 text-xs sm:text-sm md:text-base">
-                      {member.role}
-                    </td>
-                    <td className="p-2 sm:p-4 border border-gray-300 text-xs sm:text-sm md:text-base">
-                      {member.count}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <div className="flex flex-wrap justify-center gap-6">
+            {members.map((member, index) => (
+              <div
+                key={index}
+                className="bg-white shadow-md rounded-lg p-4 w-48 flex flex-col items-center text-center hover:shadow-lg transition-all"
+              >
+                <div className="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full text-xl">
+                  {member.role.charAt(0)}
+                </div>
+                <div className="mt-3 font-semibold text-gray-800">
+                  {member.role}
+                </div>
+                <div className="mt-1 text-gray-500 text-sm">Members</div>
+                <div className="mt-2 bg-gray-100 text-primary px-3 py-1 rounded-full text-sm font-semibold">
+                  {member.count}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
         {/* Equipment & Machinery Section */}
-        <div className="mt-16">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
+        <div className="mt-16 text-center">
+          <h2 className="text-3xl font-bold text-gray-800 mb-6">
             Equipment & Machinery
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {equipment.map((item) => (
-              <div key={item.name} className="text-center">
-                <img
-                  className="w-full max-w-xs mx-auto rounded-lg shadow-lg"
-                  src={item.img}
-                  alt={item.name}
-                />
-                <h3 className="mt-4 text-xl font-semibold text-gray-900">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4">
+            {equipment.map((item, index) => (
+              <div
+                key={index}
+                className="relative bg-white shadow-md rounded-lg p-4 flex items-center justify-between border border-gray-200 hover:shadow-lg transition-all"
+              >
+                <span className="text-lg font-semibold text-gray-900">
                   {item.name}
-                </h3>
-                <p className="text-gray-600">{item.description}</p>
+                </span>
+                <div className="bg-primary text-white px-3 py-1 rounded-full text-sm font-bold">
+                  {item.count}
+                </div>
               </div>
             ))}
           </div>

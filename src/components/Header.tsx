@@ -31,13 +31,17 @@ const Menu = () => {
               <div className="flex items-center justify-between w-full md:w-auto">
                 <a href="#">
                   <span className="sr-only">{companyName}</span>
-                  <img alt="logo" className="h-14 w-auto sm:h-14" src={logo} />
+                  <img
+                    alt="logo"
+                    className="h-14 w-auto sm:h-14 transition-transform duration-300 hover:rotate-90"
+                    src={logo}
+                  />
                 </a>
                 <div className="-mr-2 flex items-center md:hidden">
-                   <Popover.Button className="bg-gray-100 rounded-md p-2 inline-flex items-center justify-center text-gray-500 hover:text-gray-700 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-400">
-                  <span className="sr-only">Open main menu</span>
-                  <MenuIcon className="h-6 w-6" aria-hidden="true" />
-                </Popover.Button>
+                  <Popover.Button className="bg-gray-100 rounded-md p-2 inline-flex items-center justify-center text-gray-500 hover:text-gray-700 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-400">
+                    <span className="sr-only">Open main menu</span>
+                    <MenuIcon className="h-6 w-6" aria-hidden="true" />
+                  </Popover.Button>
                 </div>
               </div>
             </div>

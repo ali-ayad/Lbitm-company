@@ -20,7 +20,7 @@ const Product = () => {
 
   return (
     <section className="bg-background py-12" id="product">
-      <div className="container max-w-6xl mx-auto px-6">
+      <div className="container max-w-5xl mx-auto px-6">
         {/* Section Title */}
         <h1 className="text-5xl font-bold text-center text-primary mb-4">
           {product.title}
@@ -28,37 +28,27 @@ const Product = () => {
         <Divider />
 
         {/* Project List */}
-        {items.slice(0, visibleProjects).map((item, index) => (
-          <div
-            key={item.title}
-            className={`flex flex-col md:flex-row items-center ${
-              index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-            } my-12`}
-          >
-            {/* Image Section (Placed First on Small Screens) */}
-            <div className="w-full md:w-1/2 p-4">
-              <img
-                className="w-full h-auto rounded-lg shadow-lg object-cover"
-                src={item.img}
-                alt={item.title}
-              />
-            </div>
-
-            {/* Text Content */}
-            <div className="w-full md:w-1/2 p-4">
-              <h3 className="text-2xl md:text-3xl text-gray-800 font-bold mb-3">
+        <div className="space-y-6">
+          {items.slice(0, visibleProjects).map((item) => (
+            <div
+              key={item.title}
+              className="bg-white shadow-md rounded-lg p-6 border-l-4 border-primary"
+            >
+              <h3 className="text-2xl font-bold text-gray-800 mb-2">
                 {item.title}
               </h3>
               <p className="text-gray-600">{item.description}</p>
-              <p className="mt-4 text-lg font-semibold text-gray-700">
-                <span className="text-primary">Client:</span> {item.client}
-              </p>
-              <p className="text-lg font-semibold text-gray-700">
-                <span className="text-primary">Budget:</span> {item.budget}
-              </p>
+              <div className="mt-4">
+                <p className="text-lg font-semibold text-gray-700">
+                  <span className="text-primary">Client:</span> {item.client}
+                </p>
+                <p className="text-lg font-semibold text-gray-700">
+                  <span className="text-primary">Budget:</span> {item.budget}
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
 
         {/* Show More / Show Less Buttons */}
         <div className="text-center mt-8">
